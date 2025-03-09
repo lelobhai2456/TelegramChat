@@ -5,8 +5,9 @@ from config import CHANNEL, GROUP, OWNER, TOKEN
 from dataEgine import *
 from Messages import *
 
-access_token = 7211503068:AAEs4jySMlPGcsjeA-aGG9LfNOZqaTe9MIY
-bot = @CGPSCwalabhai_bot
+access_token = os.getenv("7211503068:AAEs4jySMlPGcsjeA-aGG9LfNOZqaTe9MIY")
+bot = bot = telebot.TeleBot(access_token)
+
 
 
 def inline_menu():
